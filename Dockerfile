@@ -3,13 +3,19 @@ FROM node:20-bookworm
 RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     libx11-6 \
+    libxdamage1 \
+    libxfixes3 \
     libxrandr2 \
+    libxrender1 \
     libxinerama1 \
     libxi6 \
     libxext6 \
     libxcursor1 \
     libxss1 \
     libxcomposite1 \
+    libxtst6 \
+    libxkbcommon0 \
+    libxkbcommon-x11-0 \
     libasound2 \
     libpangoft2-1.0-0 \
     libpango-1.0-0 \
@@ -18,9 +24,9 @@ RUN apt-get update && apt-get install -y \
     libcups2 \
     libdrm2 \
     libgbm1 \
+    libgl1-mesa-glx \
     libnspr4 \
     libnss3 \
-    libxkbcommon0 \
     libfontconfig1 \
     libfreetype6 \
     libharfbuzz0b \
